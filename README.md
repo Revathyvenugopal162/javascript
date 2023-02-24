@@ -7,7 +7,24 @@ For buisness applications and wep app.
 
 # Fixing error
 - in console
+- freely use white space
 - commenting 
 1. // ___ single comment
 2. /* */ 
 - 
+# variable and constants
+
+declaring variables
+- let
+ * int, float, boolean, string
+ * camalcase - __accountNumber__
+ * private - _accountNumber
+ * automatically generated - $accountNumber
+ * `` __proto__`` - non standard features
+- const
+ * fixed
+- var
+ * variable
+naming variables
+common error variables
+
