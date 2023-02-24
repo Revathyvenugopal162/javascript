@@ -28,3 +28,16 @@ declaring variables
 naming variables
 common error variables
 
+# Types and operators
+# pgm flow
+* if ... else - conditional
+* comparinf === ==
+* Truthy Falsy
+* The ternary Operator
+* Blockscope
+* for, while...
+
+Ternarty operators
+==================
+(condition)? truestatement: false statement;
+
