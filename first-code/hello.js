@@ -13,11 +13,11 @@ console.log(pricevv);
 console.log(saved);
 let person = { // object
     firstName: 'Revathy',
-    lastName: 'venugopal'
+    lastName: 'venugopal',
 };
-console.log(typeof person)
-console.log(person)
-console.log(person.lastName)
+console.log(typeof person);
+console.log(person);
+console.log(person.lastName);
 
 // The conditional
 if ( 1 === 1){//type check
@@ -25,7 +25,7 @@ if ( 1 === 1){//type check
 }
 // !==, truthy and falsy
 if ( 1 == '1'){
-    console.log("Not looking for types")
+    console.log("Not looking for types");
 } 
 
 if(0){ //false
@@ -38,5 +38,17 @@ else{// else if
 (price > 10) ? console.log('yes') : console.log('no');
 
 for(let i =0; i<3; i++){
-    console.log(i)
+    console.log(i);
 }
+
+function showMessages(message, anotherMessage){
+    console.log(message, anotherMessage);
+}
+
+let key = 20;
+function getSecretCode(value) {
+    let code = value * key;
+    return code;
+}
+showMessages("This is", getSecretCode(2));
+showName("Revathy Venugopal")

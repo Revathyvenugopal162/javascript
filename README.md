@@ -41,3 +41,22 @@ Ternarty operators
 ==================
 (condition)? truestatement: false statement;
 
+Functions
+==========
+
+``` 
+function showMessage(){
+
+}
+```
+```
+showMessage();
+```
+```
+let showMessage = function(message, firstName){
+    console.log(message, firstName);
+}
+
+showMessage(message, firstName);
+```
+
