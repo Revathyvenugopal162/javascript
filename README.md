@@ -60,3 +60,37 @@ let showMessage = function(message, firstName){
 showMessage(message, firstName);
 ```
 
+Objects and the DOM
+===================
+properties
+----------
+```
+let person = {
+    name : "Revathy",
+    hour : 40,
+    Time : True
+};
+```
+object methods
+--------------
+
+```
+let person = {
+    name : "Revathy",
+    hour : 40,
+    Time : True,
+    showInfo: function(){
+        showmessage(this.name) // property name
+    }
+};
+
+person.showInfo();
+showMessage( typeof person.showInfo) // function
+```
+
+The objects are at *_https://developer.mozilla.org/en-US/docs/Web/JavaScript_*.
+
+DOM (Document Object Model)
+----------------------------
+
+

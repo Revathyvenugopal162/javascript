@@ -52,3 +52,21 @@ function getSecretCode(value) {
 }
 showMessages("This is", getSecretCode(2));
 showName("Revathy Venugopal")
+
+
+let symbol = Symbol();//secret codes
+let personOne = {
+    name: "Revathy Venugopal",
+    hour: 40,
+    Time: true,
+    [symbol]: 'SecretInformation'
+};
+
+person.hour = 50;
+
+console.log(personOne.name);
+console.log(personOne.hour);
+
+let now = new Date();
+console.log(now.toDateString());
+console.log( Math.abs(-69));
