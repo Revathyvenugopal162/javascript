@@ -39,7 +39,7 @@ common error variables
 
 Ternarty operators
 ==================
-(condition)? truestatement: false statement;
+(condition)? true statement: false statement;
 
 Functions
 ==========
