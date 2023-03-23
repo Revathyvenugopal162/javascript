@@ -94,3 +94,23 @@ DOM (Document Object Model)
 ----------------------------
 
 HTML element - style
+
+ARRAYS
+------
+* []
+* Array.of()
+
+manupulating array.
+values.push('value') - pushing value to last element of array values.
+values.pop() -take last element.
+values.shift() - first element take out.
+values.unshift('value') -add the element to first.
+
+slice() and splice()
+---------------------
+```
+values = ['1','2'];
+newValue = values.slice(1)// 1 only
+```
+
+splice 

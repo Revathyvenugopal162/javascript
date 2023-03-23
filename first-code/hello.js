@@ -71,3 +71,21 @@ let now = new Date();
 console.log(now.toDateString());
 console.log( Math.abs(-69));
 
+const values = ['a', 'b', 'c'];
+console.log(values);
+console.log(values[0]);
+console.log(Array.isArray(values));
+values.push('d');
+console.log(values.pop());
+values.unshift("hello");
+console.log(values);
+
+// splice and slice
+
+const arrayss = ['a', 'b', 'c', 'e', 'f'];
+const newArrays = arrayss.slice(1, 4); //b to e
+console.log( newArrays );
+
+const arraySplice = ['a', 'b', 'c', 'e', 'f'];
+arraySplice.splice(1, 4); //deleted e
+console.log( arraySplice );
