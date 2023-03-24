@@ -89,3 +89,31 @@ console.log( newArrays );
 const arraySplice = ['a', 'b', 'c', 'e', 'f'];
 arraySplice.splice(1, 4); //deleted e
 console.log( arraySplice );
+
+function uploadFile() {
+    var input = document.getElementById("myFileUpload");
+    var file = input.files[0];
+    var formData = new FormData();
+  
+    formData.append("file", file);
+  
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/upload");
+    xhr.send(formData);
+  }
+
+  function readFile() {
+    var input = document.getElementById("myFileUpload");
+    var file = input.files[0];
+    if (file) {
+        var reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = function(event) {
+        var contents = event.target.result;
+        console.log(reader.result);
+      alert(contents);
+      var fileContentsElement = document.getElementById("fileContents");
+      fileContentsElement.textContent = contents;
+    };
+    reader.readAsText(file);
+  }}
