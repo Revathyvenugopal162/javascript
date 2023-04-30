@@ -1,4 +1,5 @@
-.. title:: My Document
+My Document
+=========
 Paragraphs:
 This is a paragraph.
 Lists:
