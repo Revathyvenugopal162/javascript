@@ -9,6 +9,7 @@ Lists:
 - Item 3
 Tables:
 .. table:: My Table
+
 +--------+--------+
 | Header | Header |
 +========+========+
