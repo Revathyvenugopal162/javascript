@@ -117,3 +117,13 @@ Array searching and looping
 ---------------------------
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+* array in DOM:
+
+variables
+---------
+global
+functional
+use strict;
+
+

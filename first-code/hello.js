@@ -125,15 +125,25 @@ console.log(searchValues.indexOf('f')); // -1 non exist values
 const searchSet = searchValues.filter(function(item){
     return item > 'b'; // c, d
 });
-console.log(searchSet)
+console.log(searchSet);
 
 const findValues = ["a", "bbbb", "c", "d"];
 const findSet = findValues.find(function(item){
     return item.length > 1; // b
 });
-console.log(findSet)
+console.log(findSet);
 
 findValues.forEach(function(item) {
-    console.log(item)
+    console.log(item);
     
 });
+
+const container = document.getElementsByClassName('container');
+
+console.log(container);
+container[2].classList.add('d-none'); //remove picture of boots
+
+'use strict';
+
+product = 126;
+console.log(product); //error because of use strict
