@@ -89,3 +89,61 @@ console.log( newArrays );
 const arraySplice = ['a', 'b', 'c', 'e', 'f'];
 arraySplice.splice(1, 4); //deleted e
 console.log( arraySplice );
+
+function uploadFile() {
+    var input = document.getElementById("myFileUpload");
+    var file = input.files[0];
+    var formData = new FormData();
+  
+    formData.append("file", file);
+  
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/upload");
+    xhr.send(formData);
+  }
+
+  function readFile() {
+    var input = document.getElementById("myFileUpload");
+    var file = input.files[0];
+    if (file) {
+        var reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = function(event) {
+        var contents = event.target.result;
+        console.log(reader.result);
+      alert(contents);
+      var fileContentsElement = document.getElementById("fileContents");
+      fileContentsElement.textContent = contents;
+    };
+    reader.readAsText(file);
+  }}
+
+const searchValues = ["a", "b", "c", "d"];
+console.log(searchValues.indexOf('c')); // 2
+console.log(searchValues.indexOf('f')); // -1 non exist values
+
+const searchSet = searchValues.filter(function(item){
+    return item > 'b'; // c, d
+});
+console.log(searchSet);
+
+const findValues = ["a", "bbbb", "c", "d"];
+const findSet = findValues.find(function(item){
+    return item.length > 1; // b
+});
+console.log(findSet);
+
+findValues.forEach(function(item) {
+    console.log(item);
+    
+});
+
+const container = document.getElementsByClassName('container');
+
+console.log(container);
+container[2].classList.add('d-none'); //remove picture of boots
+
+'use strict';
+
+product = 126;
+console.log(product); //error because of use strict

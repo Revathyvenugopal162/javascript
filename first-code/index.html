@@ -203,6 +203,23 @@
         </div>
         <div class="crf-footer--copyright text-primary">@Pluralsight 2018</div>
     </footer>
+    <input type="file" id="myFileUpload">
+    <button onclick="uploadFile()">Upload</button>
+    <input type="file" id="myFileUpload">
+    <button onclick="readFile()">Read file</button>
+    <script>
+        function readFile() {
+          var input = document.getElementById("myFileUpload");
+          var file = input.files[0];
+          if (file) {
+            var reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = function() {
+              console.log(reader.result);
+            };
+          }
+        }
+        </script>
 </div>
 <script src="./utils.js"></script>
 <script src="./hello.js"></script>

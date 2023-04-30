@@ -113,4 +113,17 @@ values = ['1','2'];
 newValue = values.slice(1)// 1 only
 ```
 
-splice 
+Array searching and looping 
+---------------------------
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+* array in DOM:
+
+variables
+---------
+global
+functional
+use strict;
+
+
